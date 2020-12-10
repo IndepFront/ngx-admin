@@ -1,0 +1,32 @@
+:host{
+    new-payment-widget {
+        min-width: 1249px;
+    }
+    
+    .col-title {
+        margin-top: 2rem;
+        & i.fa-paper-plane {
+            font-size: 5em;
+        }
+    }
+
+    .col-overview {
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+
+    .col-submit button {
+        height: 80%;
+        & i {
+            font-size: 2em;
+        }
+    }
+
+    .col-review input,
+    .col-review textarea {
+        // background-color: white;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);      
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+}

@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-12">
+        <nb-card>
+            <nb-card-header>
+                <div class="row">
+                    <div class="col text-center">
+                        <strong>Cashed Out</strong>
+                    </div>
+                </div>                                
+            </nb-card-header>            
+            <nb-card-body class="scrollable">                                
+                <div class="row p-1 entries">
+                    <div class="col-5 text-right p-0">
+                        <span class="float-right">
+                            <i class="{{ entry.currency }}"></i>
+                        </span>                                
+                    </div>
+                    <div class="col-1 p-0">&nbsp;</div>
+                    <div class="col-6 text-left p-0">
+                        <span>{{ entry.amount }}</span>
+                    </div>
+                </div>                             
+            </nb-card-body>
+            <nb-card-footer>
+                <div class="row text-center">
+                    <div class="col p-0">                        
+                        <p>Including Bonus: <i class="{{ entry.currency }}"></i>&nbsp;{{ entry.amount }}</p>
+                    </div>
+                </div>       
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>

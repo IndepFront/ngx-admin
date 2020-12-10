@@ -1,0 +1,10 @@
+:host {
+    .scrollable {
+        max-height: 150px;
+        overflow-y: scroll;
+    }    
+
+    .entries {
+        font-size: 0.8rem;
+    }
+}

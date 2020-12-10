@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col-12">
+        <nb-card>
+            <nb-card-header>
+                <h5 class="col-12 text-center">New Payment Request</h5>
+            </nb-card-header>            
+            <nb-card-body>
+                <div class="row">       
+                    <!-- Icon -->
+                    <div class="col-title text-center col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-xs-12">
+                        <span class="align-middle">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                    </div>
+
+                    <!-- Account Info  -->
+                    <div class="col-overview mt-4 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col float-left font-weight-bold text-left">Minimum amount:&nbsp;</div>
+                            <div class="col float-right text-right"> $20.00 </div>
+                        </div>                        
+                        <div class="row">
+                            <div class="col float-left font-weight-bold text-left">Maximum amount:&nbsp;</div>
+                            <div class="col float-right text-right"> $300.00 </div>
+                        </div>
+                        <div class="row">
+                            <div class="col float-left font-weight-bold text-left">Last 7 days:&nbsp;</div>
+                            <div class="col float-right text-right"> $1,110.00 </div>
+                        </div>
+                        <div class="row">
+                            <div class="col float-left font-weight-bold text-left">What's left:&nbsp;</div>
+                            <div class="col float-right text-right"> $810.00 </div>
+                        </div>
+                    </div>  
+
+                    <!-- Payment Form -->
+                    <div class="col-data-entry col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                        <div class="row m-1">
+                            <div class="col p-1">
+                                <input type="text" nbInput fullWidth placeholder="Amount" fieldSize="small" [(ngModel)]="model.amount" />
+                            </div>                            
+                        </div>                        
+                        <div class="row m-1">
+                            <div class="col p-1">
+                                <input type="text" nbInput fullWidth placeholder="Phone" fieldSize="small" [(ngModel)]="model.phone" />
+                            </div>                 
+                            <!-- <div class="col p-1">
+                                <input type="text" nbInput fullWidth placeholder="Amount" fieldSize="small" />
+                            </div>                             -->
+                        </div>                        
+                        <div class="row m-1">
+                            <div class="col p-1">
+                                <textarea rows="1" nbInput fullWidth  placeholder="Reason" fieldSize="small" [(ngModel)]="model.reason"></textarea>
+                            </div>                            
+                        </div>
+                    </div>  
+
+                    <!-- Payment Form -->
+                    <div class="col-review col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                        <div class="row m-1">
+                            <div class="col p-1">
+                                <input readonly type="text" nbInput fullWidth placeholder="" fieldSize="small" value="{{ reviewStringTo }}" />
+                            </div>                            
+                        </div>                                                     
+                        <div class="row m-1">
+                            <div class="col p-1">
+                                <textarea rows="3" readonly nbInput fullWidth  placeholder="" fieldSize="small" value="{{ reviewStringReason }}"></textarea>
+                            </div>                            
+                        </div>
+                    </div> 
+                    
+                    <!-- Button -->
+                    <div class="col-submit mt-4 col-xxl-1 col-xl-1 col-lg-1 col-md-2 col-sm-12 col-xs-12 text-center">
+                        <button nbButton [status]="'primary'" hero>
+                            SEND REQUEST&nbsp;&nbsp;
+                            <i class="fas fa-paper-plane"></i>
+                        </button>                        
+                    </div>
+                </div>                
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>

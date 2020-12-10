@@ -1,0 +1,121 @@
+:host{   
+
+    @media only screen and (max-width: 320px) {
+
+        h5 { 
+           font-size: 1em; 
+        }
+
+        .col-title {            
+            & i.fa-paper-plane {
+                font-size: 3em !important;
+            }
+        }
+
+        .col-overview {
+            font-size: 0.6rem !important;
+            line-height: 0.9rem !important;
+        }
+
+        input[type=text]{
+            height: 25px !important;
+        }
+
+        textarea{
+            height: 40px !important;
+        }
+
+        .col-review {
+            & textarea {
+                height: 70px !important;
+            }
+        }
+     
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        h5 { 
+           font-size: 1em; 
+        }
+
+        .col-title {            
+            & i.fa-paper-plane {
+                font-size: 3em !important;
+            }
+        }
+
+        .col-overview {
+            font-size: 0.47rem !important;
+            line-height: 1rem !important;
+        }
+
+        input[type=text]{
+            height: 25px !important;
+        }
+
+        textarea{
+            height: 40px !important;
+        }
+
+        .col-review {
+            & textarea {
+                height: 70px !important;
+            }
+        }
+     
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+        h5 { 
+           font-size: 1em; 
+        }
+
+        .col-title {            
+            & i.fa-paper-plane {
+                font-size: 4em !important;
+            }
+        }
+
+        .col-overview {
+            font-size: 0.48rem !important;
+            line-height: 1rem !important;
+        }
+
+        input[type=text]{
+            height: 25px !important;
+        }
+
+        // textarea{
+        //     height: 40px !important;
+        // }
+     
+    }
+
+    .col-title {
+        margin-top: 2rem;
+        & i.fa-paper-plane {
+            font-size: 5em;
+        }
+    }
+
+    .col-overview {
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+
+    .col-submit button {
+        height: 80%;
+        & i {
+            font-size: 2em;
+        }
+    }
+
+    .col-review input,
+    .col-review textarea {        
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);      
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+}
