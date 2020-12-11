@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
     width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
+
+    & .logo {
+      border-left: none !important;
+    }
   }
 
   nb-action {

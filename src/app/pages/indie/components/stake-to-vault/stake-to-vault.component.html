@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-12">
+        <nb-card>            
+            <nb-card-body class="p-0 m-0">
+                <div class="row m-2 mt-3 mb-3">
+                    <div class="col text-center">
+                        <button nbButton [status]="'primary'" hero fullWidth class="btn-stake-to-vault">
+                            STAKE TO VAULT&nbsp;&nbsp;
+                            <i class="fas fa-arrow-right"></i>
+                        </button>     
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col">
+                        <input type="text" nbInput fullWidth placeholder="Amount" fieldSize="small" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row m-2" *ngFor="let bonus_entry of bonus_entries;let i =index;">
+                            <div class="col">
+                                <span class="float-left text-left">{{ bonus_entry.title }}</span>
+                                <span class="float-right text-right">{{ bonus_entry.details }}</span>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col">
+                        <p>Will be transfered back to Inbox on <b>March 28th, 2021</b>.</p>
+                    </div>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>

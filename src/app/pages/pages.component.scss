@@ -14,5 +14,7 @@
         opacity: 1;
       }
     }
+
+    ::ng-deep .menu-sidebar { display: none !important;}
   }
 }

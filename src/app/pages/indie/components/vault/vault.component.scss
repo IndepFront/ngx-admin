@@ -1,0 +1,13 @@
+:host {
+    .scrollable {
+        max-height: 550px;
+        overflow-y: scroll;
+    }
+
+    .vault-title {
+        margin-top: 1rem;
+        & i.fa-lock {
+            font-size: 5em;
+        }
+    }
+}

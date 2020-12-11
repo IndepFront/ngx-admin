@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-12">
+        <nb-card>
+            <nb-card-header>
+                <div class="row">
+                    <div class="col text-center">
+                        <strong>Pending Transfers</strong>
+                    </div>
+                </div>    
+            </nb-card-header>            
+            <nb-card-body class="scrollable">                
+                <div class="row">
+                    <!-- <div class="vault-title">
+                        <i class="fas fa-lock align-middle"></i>
+                    </div> -->
+                    <div class="col">
+                        <div class="row p-1 entries" *ngFor="let entry of pending_transfers;let i = index;">                    
+                            <div class="col-1 text-right p-0">
+                                <span class="float-right">
+                                    <i class="{{ entry.currency }}"></i>
+                                </span>                                
+                            </div>
+                            <div class="col-4 text-left p-0">
+                                <span>{{ entry.amount }}</span>
+                            </div>
+                            <div class="col-7 text-right p-0">
+                                <span class="">{{ entry.reason }}</span>
+                            </div>
+                        </div>                              
+                    </div>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>

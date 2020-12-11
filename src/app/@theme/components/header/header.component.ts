@@ -5,6 +5,7 @@ import { UserData } from '../../../@core/data/users';
 import { LayoutService } from '../../../@core/utils';
 import { map, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import { AppService } from 'app/services/app.service';
 
 @Component({
   selector: 'ngx-header',
@@ -36,9 +37,12 @@ export class HeaderComponent implements OnInit, OnDestroy {
     },
   ];
 
-  currentTheme = 'default';
+  currentTheme = 'cosmic';
 
-  userMenu = [ { title: 'Profile' }, { title: 'Log out' } ];
+  userMenu = [ 
+    { title: 'Profile' }
+    , { title: 'Log out' } 
+  ];
 
   constructor(private sidebarService: NbSidebarService,
               private menuService: NbMenuService,
@@ -49,6 +53,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.themeService.changeTheme('cosmic');
     this.currentTheme = this.themeService.currentTheme;
 
     this.userService.getUsers()
@@ -80,11 +85,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.themeService.changeTheme(themeName);
   }
 
-  toggleSidebar(): boolean {
+  toggleSidebar(): boolean {        
     this.sidebarService.toggle(true, 'menu-sidebar');
     this.layoutService.changeLayoutSize();
-
-    return false;
+    return false;    
   }
 
   navigateHome() {

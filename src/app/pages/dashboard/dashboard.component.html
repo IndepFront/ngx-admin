@@ -1,42 +1,42 @@
 <div class="row">
-  <div class="col-xxxl-3 col-md-6" *ngFor="let statusCard of statusCards">
-    <ngx-status-card [title]="statusCard.title" [type]="statusCard.type">
-      <i [ngClass]="statusCard.iconClass"></i>
-    </ngx-status-card>
-  </div>
+    <div class="col">
+        <indie-new-payment-widget></indie-new-payment-widget>
+    </div>
 </div>
-
 <div class="row">
-  <div class="col-xxxl-3 col-xxl-4 col-lg-5 col-md-6">
-    <ngx-temperature></ngx-temperature>
-  </div>
-
-  <div class="col-xxxl-9 col-xxl-8 col-lg-7 col-md-6">
-    <ngx-electricity></ngx-electricity>
-  </div>
+    <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <indie-inbox-widget></indie-inbox-widget>
+    </div>
+    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-6 col-xs-12">
+        <div class="row">
+            <div class="col-12">
+                <indie-stake-to-vault-widget></indie-stake-to-vault-widget>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <indie-cash-out-widget></indie-cash-out-widget>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col">
+                <indie-vault-widget></indie-vault-widget>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <indie-pending-transfer-widget></indie-pending-transfer-widget>
+            </div>
+            <div class="col-6">
+                <indie-cashed-out-summary-widget></indie-cashed-out-summary-widget>
+            </div>
+        </div>
+    </div>
 </div>
-
 <div class="row">
-  <div class="col-xxxl-9 col-xl-12">
-    <ngx-rooms></ngx-rooms>
-  </div>
-
-  <div class="col-xxxl-3 col-xxl-4 col-lg-7 col-md-6">
-    <ngx-contacts></ngx-contacts>
-  </div>
-
-  <div class="col-xxxl-3 col-xxl-4 col-lg-5 col-md-6">
-    <ngx-solar [chartValue]="solarValue"></ngx-solar>
-
-    <ngx-kitten></ngx-kitten>
-  </div>
-
-  <div class="col-xxxl-3 col-xxl-4 col-md-5">
-    <ngx-traffic></ngx-traffic>
-    <ngx-weather></ngx-weather>
-  </div>
-
-  <div class="col-xxxl-6 col-xxl-12 col-md-7">
-    <ngx-security-cameras></ngx-security-cameras>
-  </div>
+    <div class="col">
+        <indie-last-payment-widget></indie-last-payment-widget>
+    </div>
 </div>
