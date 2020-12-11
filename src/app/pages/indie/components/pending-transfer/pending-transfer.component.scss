@@ -7,4 +7,15 @@
     .entries {
         font-size: 0.8rem;
     }
+
+    .icon-background {
+        & i {
+            font-size: 5rem;
+            position: absolute;
+            opacity: 0.2;
+            left: 5rem;
+            top: 3rem;
+        }
+    }
+    
 }

@@ -45,6 +45,41 @@ $nb-themes: nb-register-theme((
   slide-out-shadow-color-rtl: -2px 0 3px #29157a,
 ), cosmic, cosmic);
 
+// $nb-themes: nb-register-theme((
+//   layout-padding-top: 2.25rem,
+
+//   menu-item-icon-margin: 0 0.5rem 0 0,
+
+//   card-height-tiny: 13.5rem,
+//   card-height-small: 21.1875rem,
+//   card-height-medium: 28.875rem,
+//   card-height-large: 36.5625rem,
+//   card-height-giant: 44.25rem,
+//   card-margin-bottom: 1.875rem,
+//   card-header-with-select-padding-top: 0.5rem,
+//   card-header-with-select-padding-bottom: 0.5rem,
+
+//   select-min-width: 6rem,
+
+//   slide-out-background: #e9f6fe,
+//   slide-out-shadow-color: 2px 0 3px #e9f6fe,
+//   slide-out-shadow-color-rtl: -2px 0 3px #e9f6fe,
+
+//   color-primary-100: #9edafc, // <- new primary color
+//   color-primary-200: #5dabfd,
+//   color-primary-300: #348bfc,
+//   color-primary-400: #0463fe,
+//   color-primary-500: #0261fe,
+//   color-primary-600: #012cff,
+//   color-primary-700: #031ec8,
+//   color-primary-800: #02128a,
+//   color-primary-900: #01054a,
+
+//   text-basic-color: color-basic-100,
+//   text-disabled-color: color-basic-600,
+
+// ), cosmic, cosmic);
+
 $nb-themes: nb-register-theme((
   layout-padding-top: 2.25rem,
 
@@ -86,3 +121,45 @@ $nb-themes: nb-register-theme((
   slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
   slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
 ), dark, dark);
+
+$nb-themes: nb-register-theme((
+  color-primary-100: #9edafc, // <- new primary color
+  color-primary-200: #5dabfd,
+  color-primary-300: #348bfc,
+  color-primary-400: #0463fe,
+  color-primary-500: #0261fe,
+  color-primary-600: #012cff,
+  color-primary-700: #031ec8,
+  color-primary-800: #02128a,
+  color-primary-900: #01054a,
+
+  color-basic-100: #9edafc,
+  color-basic-200: #5dabfd,
+  color-basic-300: #348bfc,
+  color-basic-400: #0463fe,
+  color-basic-500: #0261fe,
+  color-basic-600: #012cff,
+  color-basic-700: #031ec8,
+  color-basic-800: #02128a,
+  color-basic-900: #295c66,
+  color-basic-1000: #244555,
+  color-basic-1100: #121a2b,
+
+  background-basic-color-1: color-basic-100,
+  background-basic-color-2: color-basic-200,
+  background-basic-color-3: color-basic-300,
+  background-basic-color-4: color-basic-400,
+
+  border-basic-color-1: color-basic-100,
+  border-basic-color-2: color-basic-200,
+  border-basic-color-3: color-basic-300,
+  border-basic-color-4: color-basic-400,
+  border-basic-color-5: color-basic-500,
+
+  shadow: 0 0.5rem 1rem 0 rgba(25, 30, 51, 0.24),
+
+  text-disabled-color: color-basic-100,
+  text-primary-color: color-primary-600,
+  text-primary-focus-color: colo-primary-400
+
+), indie, cosmic);

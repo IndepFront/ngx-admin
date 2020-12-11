@@ -10,4 +10,14 @@
             font-size: 5em;
         }
     }
+
+    .icon-background {
+        & i {
+            font-size: 4rem;
+            position: absolute;
+            opacity: 0.2;
+            left: 5rem;
+            top: 0.6rem;
+        }
+    }
 }

@@ -16,4 +16,100 @@
   nb-layout-footer { 
     display: none !important;
   }
+
+  nb-layout {
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-blend-mode: normal !important;    
+    background-image: url('./../../../assets/images/indie-background.jpg') !important;
+
+    & .layout {
+      background-color: transparent !important;
+      // color: #ffffff;
+      // font-family: Open Sans, sans-serif;
+      // font-size: 0.9375rem;
+      // font-weight: 400;
+      // line-height: 1.25rem;
+      // min-height: 100vh;
+    }
+  }
+
+  h1, h2, h3, h4, h5, p, span, strong {
+    color: #0a29fb !important;
+  }
+
+  button.status-primary {
+    color: white !important;
+    border-radius: 1rem !important;
+    border-color: #5258f9 !important;
+    background-color: #5258f9 !important;
+  }
+
+  [nbButton]{
+    &.appearance-hero.status-primary {
+      background-image: linear-gradient(to right, #5258f9, #5258f9) !important;
+      border: none !important;
+      box-shadow: 0 0 0 0 #5258f9, 0 0 0 0 #5258f9, 0 0 transparent !important;
+      color: #ffffff !important;
+    }
+
+    &.signout {
+      border-radius: 0px !important;
+      background-color: transparent !important;
+      border: 2px solid white !important;
+      &:hover {        
+        color: #162bfb !important;
+        border: 2px solid white !important;
+        background-color: white  !important;
+      }
+    }
+  }
+
+  input[type="text"] {
+    color: #b1b2fd !important;
+    border-color: #a7b2fd !important;
+    background-color: white !important; 
+  }
+
+  textarea {
+    color: #b1b2fd !important;
+    border-color: #a7b2fd !important;
+    background-color: white !important; 
+  }
+
+  nb-card {
+    color: #0a29fb !important;
+    border-color: #a7b2fd !important;
+    background-color: rgba(207, 222, 255, .4) !important;
+    
+    & nb-card-header {
+      color: #0a29fb !important;
+      border-color: #a7b2fd !important;
+      background-color: #cfdeff !important; 
+    }
+    
+    & nb-card-body {
+      color: #0a29fb !important;
+      border-color: #a7b2fd !important;
+      background-color: #cfdeff !important; 
+    }
+    
+    & nb-card-footer {
+      color: #0a29fb !important;
+      border-color: #a7b2fd !important;
+      background-color: #cfdeff !important; 
+    }
+  }
+
+  nb-layout-header {
+    background-color: #162bfb !important;
+  }
+
+  .text-white {
+    color: white !important;
+  }
+
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: #162bfb !important;
+  }
 }

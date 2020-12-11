@@ -3,4 +3,14 @@
         max-height: 550px;
         overflow-y: scroll;
     }
+
+    .icon-background {
+        & i {
+            top: 10rem;
+            left: 7rem;
+            opacity: 0.2;
+            font-size: 12rem;
+            position: absolute;
+        }
+    }
 }

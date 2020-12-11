@@ -15,10 +15,13 @@
                     <span></span>
                 </div>
             </nb-card-header>            
-            <nb-card-body class="scrollable">                
+            <nb-card-body class="scrollable">      
+                <span class="icon-background">
+                    <i class="fas fa-lock"></i>
+                </span>          
                 <div class="row">
                     <div class="col-3 vault-title">
-                        <i class="fas fa-lock align-middle"></i>
+                        <!-- <i class="fas fa-lock align-middle"></i> -->
                     </div>
                     <div class="col-9">
                         <div class="row p-1" *ngFor="let entry of vault_entries;let i = index;">                    
