@@ -109,7 +109,16 @@
     color: white !important;
   }
 
+  .text-indie-blue {
+    color: #0a29fb !important;
+  }
+
   .scrollable::-webkit-scrollbar-thumb {
     background-color: #162bfb !important;
+  }
+
+  .cursor-pointer {
+    cursor: pointer !important;
+    text-shadow: 2px solid lightgray !important;  
   }
 }

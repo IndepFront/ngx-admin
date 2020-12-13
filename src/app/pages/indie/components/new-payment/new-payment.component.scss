@@ -105,11 +105,16 @@
         line-height: 1.5rem;
     }
 
-    .col-submit button {
-        height: 80%;
-        & i {
-            font-size: 2em;
-        }
+    // .col-submit button {
+    //     height: 80%;
+    //     & i {
+    //         font-size: 2em;
+    //     }
+    // }
+
+    & .btn-send {
+        height: 80px !important;
+        font-size: 1.4rem !important;
     }
 
     .col-review input,
