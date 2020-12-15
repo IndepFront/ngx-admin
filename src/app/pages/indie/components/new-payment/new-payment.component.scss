@@ -14,7 +14,7 @@
 
         .col-overview {
             font-size: 0.6rem !important;
-            line-height: 0.9rem !important;
+            line-height: 0.9rem !important;            
         }
 
         input[type=text]{
@@ -25,7 +25,8 @@
             height: 40px !important;
         }
 
-        .col-review {
+        .col-review {            
+
             & textarea {
                 height: 70px !important;
             }
@@ -46,8 +47,8 @@
         }
 
         .col-overview {
-            font-size: 0.47rem !important;
-            line-height: 1rem !important;
+            // font-size: 0.47rem !important;
+            // line-height: 1rem !important;
         }
 
         input[type=text]{
@@ -79,8 +80,8 @@
         }
 
         .col-overview {
-            font-size: 0.48rem !important;
-            line-height: 1rem !important;
+            // font-size: 0.48rem !important;
+            // line-height: 1rem !important;
         }
 
         input[type=text]{
@@ -101,26 +102,34 @@
     }
 
     .col-overview {
-        font-size: 0.75rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
-
-    // .col-submit button {
-    //     height: 80%;
-    //     & i {
-    //         font-size: 2em;
-    //     }
-    // }
 
     & .btn-send {
         height: 80px !important;
         font-size: 1.4rem !important;
     }
 
-    .col-review input,
-    .col-review textarea {        
-        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);      
-        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    }   
+    .col-review {
+        // background-color: white !important;
+        // border: 3rem solid navy;
+
+        & input,
+        & textarea {        
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);      
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        }   
+    }
+
+    .icon-background {
+        & i {
+            font-size: 5rem;
+            position: absolute;
+            opacity: 0.2;
+            left: 5rem;
+            top: 3rem;
+        }
+    }
 }

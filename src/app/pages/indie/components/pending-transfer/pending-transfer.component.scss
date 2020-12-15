@@ -1,6 +1,10 @@
 :host {
+    nb-card-header {
+        font-size: 0.9rem;
+    }
+
     .scrollable {
-        max-height: 150px;
+        max-height: 105px;
         overflow-y: scroll;
     }    
 
