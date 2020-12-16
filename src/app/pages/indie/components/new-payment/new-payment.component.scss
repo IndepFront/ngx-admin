@@ -104,6 +104,7 @@
     .col-overview {
         font-size: 1rem;
         line-height: 2rem;
+        padding-right: 5rem !important;
     }
 
     & .btn-send {
@@ -128,7 +129,7 @@
             font-size: 5rem;
             position: absolute;
             opacity: 0.2;
-            left: 5rem;
+            left: 12rem;
             top: 3rem;
         }
     }

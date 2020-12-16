@@ -13,6 +13,7 @@
     width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
 
     & .logo {
+      width: 150px !important;
       border-left: none !important;
     }
   }
