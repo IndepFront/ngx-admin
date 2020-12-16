@@ -17,11 +17,11 @@
 
     .icon-background {
         & i {
+            top: 1rem;
+            left: 5rem;
+            opacity: 0.2;
             font-size: 4rem;
             position: absolute;
-            opacity: 0.2;
-            left: 5rem;
-            top: 0.6rem;
         }
     }
 }
