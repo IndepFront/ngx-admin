@@ -112,15 +112,24 @@
         font-size: 1.4rem !important;
     }
 
-    .col-review {
-        // background-color: white !important;
-        // border: 3rem solid navy;
+    .col-review {        
+        & input {
+            margin-top: 4px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-color: transparent !important;
+        }
 
-        & input,
+        // -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        // box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);      
+        // -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+
         & textarea {        
-            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);      
-            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+            height: 88px;
+            margin-top: -1px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-top-color: transparent !important;
         }   
     }
 

@@ -17,7 +17,7 @@ export class NewPaymentComponent {
     constructor(){}
 
     public get reviewStringTo(){
-        return `to: ${this.model.phone}`;
+        return `To: ${this.model.phone}`;
     }
 
     public get reviewStringReason(){
