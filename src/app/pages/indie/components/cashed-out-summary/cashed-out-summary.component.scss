@@ -1,6 +1,12 @@
 :host {
-    nb-card-header, nb-card-footer {
-        font-size: 0.9rem;
+    & nb-card {
+
+        height: 270px !important;
+        
+        & nb-card-header, 
+        & nb-card-footer {
+            font-size: 0.9rem;
+        }
     }
 
     .scrollable {

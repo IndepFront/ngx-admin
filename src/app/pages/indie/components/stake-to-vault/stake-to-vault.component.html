@@ -15,16 +15,16 @@
                         <input type="text" nbInput fullWidth placeholder="Amount" fieldSize="small" />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="row m-2" *ngFor="let bonus_entry of bonus_entries;let i =index;">
-                            <div class="col">
+                <!-- <div class="row">
+                    <div class="col"> -->
+                        <div class="row p-0 m-0 bonus-entry" *ngFor="let bonus_entry of bonus_entries;let i =index;">
+                            <div class="col p-0 m-0">
                                 <span class="float-left text-left">{{ bonus_entry.title }}</span>
                                 <span class="float-right text-right">{{ bonus_entry.details }}</span>
                             </div>                    
                         </div>
-                    </div>
-                </div>
+                    <!-- </div>
+                </div> -->
                 <div class="row m-2">
                     <div class="col">
                         <p>Will be transfered back to Inbox on <b>March 28th, 2021</b>.</p>
